@@ -1,0 +1,276 @@
+@media screen and (min-width: 768px) {
+  /* Body */
+
+  .container {
+    max-width: 768px;
+  }
+
+  /* Шапка сайту */
+
+  .nav .list {
+    display: flex;
+    margin-right: 121px;
+  }
+
+  .nav .list .link {
+    position: relative;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: var(--secondary-text-color);
+
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: none;
+
+    transition: color var(--hover-transition);
+  }
+
+  .nav .link:hover,
+  .nav .link:focus {
+    color: var(--accent-color);
+  }
+
+  .item-nav:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .nav-active::after {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    content: "";
+
+    background-color: var(--accent-color);
+    opacity: 0;
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    transform: scale(0);
+    transition: transform 200ms linear, opacity var(--hover-transition);
+  }
+
+  .list .item-nav:hover .nav-active::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .adress {
+    display: block;
+    font-style: normal;
+  }
+
+  .adress .list {
+    display: block;
+  }
+
+  .item-adress {
+    display: block;
+  }
+  .item-adress:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .adress .list .link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.04em;
+
+    color: var(--primary-text-color);
+
+    transition: color var(--hover-transition);
+  }
+
+  .adress .link:hover,
+  .adress .link:focus {
+    color: var(--accent-color);
+  }
+
+  .mobile-modal {
+    display: none;
+  }
+
+  .btn-burger {
+    display: none;
+  }
+
+  /* Логотип */
+
+  .nav > .link {
+    margin-right: 120px;
+  }
+
+  /* Main */
+
+  /* Герой */
+
+  .main-title-place {
+    max-width: 496px;
+  }
+
+  @media screen and (min-width: 429px) {
+    .overlay {
+      max-width: 1440px;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet@1x.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-tablet@2x.jpg);
+    }
+  }
+
+  .section-hero .title {
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  /* Modal Hero Window */
+
+  .modal {
+    top: 430px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  /* Forms for Modal Window */
+
+  /* Наші переваги */
+
+  .advantages .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .item-advantages {
+    display: block;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .item-icon {
+    display: none;
+  }
+
+  .advantages .title {
+    text-align: start;
+  }
+
+  /* Те чим ми займаємось */
+
+  .product {
+    display: none;
+  }
+
+  /* Наша команда */
+
+  .team .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  /* Клієнти */
+
+  .clients .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .clients-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  /* Футер */
+
+  .footer > .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: baseline;
+    padding-left: 108px;
+  }
+
+  .box-logo {
+    text-align: left;
+    margin-right: 24px;
+  }
+
+  .box-social {
+    text-align: left;
+    margin: 0 80px 0 0;
+  }
+
+  .box-subscribe {
+    justify-content: start;
+    text-align: left;
+  }
+
+  .form-field-subscribe {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .subscribe input {
+    max-width: 264px;
+    height: 40px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .btn-subscribe {
+    margin: 0;
+  }
+
+  /* Portfolio */
+
+  .main-page .container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  /* Filters our projects */
+
+  .list.filters {
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 0;
+  }
+
+  .filters-item {
+    display: block;
+  }
+
+  .btn-filters {
+    padding: 12px 24px;
+  }
+
+  .list.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+}

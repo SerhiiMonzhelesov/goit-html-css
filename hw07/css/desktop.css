@@ -1,0 +1,204 @@
+@media screen and (min-width: 1158px) {
+  /* Body */
+
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Шапка сайту */
+
+  .nav .list {
+    margin-right: auto;
+  }
+
+  .adress {
+    margin-left: auto;
+  }
+
+  .adress .list {
+    display: flex;
+  }
+
+  .list .item-adress:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .adress .list .link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+  }
+
+  /* Логотип */
+
+  .nav > .link {
+    margin-right: 76px;
+  }
+
+  /* Main */
+
+  /* Герой */
+
+  .section-hero {
+    background-color: #2e2f42;
+    padding: 188px 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    .overlay {
+      /* max-width: 1440px; */
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-desktop@1x.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-bg-desktop@2x.jpg);
+    }
+  }
+
+  .section-hero .title {
+    margin: 0 auto 48px auto;
+  }
+
+  /* Modal Hero Window */
+
+  .modal {
+    top: 412px;
+    left: 50%;
+  }
+
+  /* Forms for Modal Window */
+
+  /* Наші переваги */
+
+  .advantages {
+    padding: 120px 0;
+  }
+
+  .advantages .list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .item-advantages {
+    display: block;
+    width: calc((100%-3 * 24px) / 4);
+  }
+
+  .item-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 8px 0;
+    background: #f4f4fd;
+    border-radius: 4px;
+  }
+
+  .advantages .title {
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* Те чим ми займаємось */
+
+  .product {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .product .title {
+    margin-bottom: 72px;
+  }
+
+  .product .list {
+    display: flex;
+  }
+
+  .item-product {
+    display: block;
+  }
+
+  .item-product:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* Наша команда */
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team .list {
+    gap: 0 24px;
+  }
+
+  /* Клієнти */
+
+  .clients .container {
+    padding: 120px 15px;
+  }
+
+  .clients-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0 24px;
+  }
+
+  .clients-item {
+    width: calc((100%-5 * 24px) / 6);
+  }
+
+  /* Футер */
+
+  .footer > .container {
+    min-width: 1158px;
+    align-items: baseline;
+    flex-wrap: nowrap;
+
+    padding: 100px 15px 100px 15px;
+  }
+
+  .box-logo {
+    margin: 0 120px 0 0;
+  }
+
+  /* Portfolio */
+
+  .main-page .container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  /* Filters our projects */
+
+  .filters-item {
+    display: block;
+  }
+
+  .projects-item-text .title {
+    margin-bottom: 8px;
+  }
+}
